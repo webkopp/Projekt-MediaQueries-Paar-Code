@@ -1,0 +1,522 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'Alegreya-Regular';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf');
+    font-family: 'Alegreya-Bold';
+    src: url('../fonts/Alegreya_SC/AlegreyaSC-Bold.ttf');
+    font-family: 'Nixie-Regular';
+    src: url('../fonts/NixieOne-Regular.ttf');
+    font-family: 'Alegreya-Sans-Medium';
+    src: url('../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+:root {
+    --white-color: white;
+    --font-color-green: rgba(58, 79, 82, 1);
+    --font-color-gray: rgba(106, 106, 106, 1);
+    --button-color: rgba(58, 79, 82, 1);
+    --image-color: rgba(2, 56, 58, 0.7);
+    --image-color-black: rgba(0, 0, 0, 0.2);
+    --small-button-color: rgba(77, 167, 202, 1);
+    --footer-background: rgba(43, 62, 81, 1);
+}
+
+html {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    border: 1px solid black;
+}
+
+/* header  */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 447px;
+    flex-shrink: 0;
+    padding: 20px 30px;
+    background-image: url(../img/0f6f55ffff18a259b1383b2fd9d785aa.png);
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    gap: 99.4px;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-family: 'Alegreya-Regular';
+    font-weight: bolder;
+}
+
+.burger__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger{
+    height: 2px;
+    width: 24px;
+    background-color: var(--white-color);
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    color: var(--white-color);
+}
+
+.landing-page h1 {
+    font-family: 'Nixie-Regular';
+    font-size: 39px;
+    font-weight: lighter;
+}
+
+.landing-page p {
+    font-family: 'Alegreya-Regular';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+/* section portfolio */
+.portfolio {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 50px 0;
+}
+
+.portfolio div h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    color: var(--font-color-green);
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.portfolio div p {
+    font-family: Helvetica, sans-serif;
+    color: var(--font-color-gray);
+    font-size: 16px;
+}
+
+.portfolio a button {
+    background-color: transparent;
+    padding: 7px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+}
+
+.portfolio a {
+    margin: -15px 0 0 -30px;
+}
+
+/* section piture__section */
+.picture__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.picture__section div {
+    background-color: var(--image-color);
+    height: 203px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture__section img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.picture__section button {
+    padding: 7px 10px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    margin-left: -220px;
+}
+
+/* section service__section */
+.service__section {
+    background-image: url(../img/8d72e0af708f1d83a868ba81ee657811.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.service__section h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 36px;
+}
+
+.service__section p {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+.service__section div {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service__content div {
+    color: var(--white-color);
+    text-align: center;
+    width: 100%;
+}
+
+.service__content img {
+    width: 60px;
+    height: 60px;
+}
+
+.service__content h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 30px;
+}
+
+.service__content p {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    width: 250px;
+    height: 80px;
+}
+
+/* section blog */
+.blog div {
+    color: var(--font-color-gray);
+    padding-bottom: 1em;
+}
+
+.blog h2 {
+    font-family:'Alegreya-Sans-Medium';
+    font-size: 30px;
+    padding-bottom: 0.5em;
+}
+
+.blog h3 {
+    font-family: Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+
+.blog p {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom: 0.5em;
+}
+
+.blog a {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #4DA7CA;
+    padding-bottom: 0.5em;
+}
+
+/* section parallax */
+
+.parallax {
+    background-image: url(../img/8d72e0af708f1d83a868ba81ee657811.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax div {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax h2 {
+    color: var(--white-color);
+    font-family:'Alegreya-Sans-Medium';
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 39.6px;
+    padding: 0 2em;
+}
+
+.parallax a button {
+    background-color: transparent;
+    padding: 7px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.parallax a {
+    padding: 1em;
+}
+
+/* section testimonials */
+
+.testimonials {
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.testimonials h1 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 30px;
+    color: var(--font-color-green);
+}
+
+.testimonials p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--font-color-gray);
+}
+
+.testimonials__content {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--font-color-gray);
+    text-align: center;
+    padding: 2em;
+}
+
+.testimonials__content p:nth-of-type(1) {
+    padding-top: 0.5em;
+}
+
+.testimonials__content p:nth-of-type(2) {
+    padding-top: 1em;
+}
+
+/* section contact */
+.contact {
+    background-image: url(../img/contact.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact div {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact__form {
+    text-align: center;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form h2 {
+    font-family: 'Alegreya-Sans-Medium';
+    font-size: 30px;
+}
+
+.contact__form p {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.contact__name__mail, .contact__text {
+    width: 80%;
+    margin-top: 1.25rem;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 0.3rem;
+}
+
+.contact__name__mail {
+    height: 2.13rem;
+}
+
+.contact__text {
+    height: 3.38rem;
+}
+
+::placeholder {
+    color: var(--white-color);
+    padding-left: 0.63rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.88rem;
+}
+
+textarea::placeholder {
+    padding-top: 0.3rem;
+}
+
+.input__button {
+    background-color: transparent;
+    padding: 7px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    margin-top: 2em;
+}
+
+
+/* section footer */
+footer {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--footer-background);
+    color: var(--white-color);
+    padding: 2em 1em;
+}
+
+footer p {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    width: 109px;
+}
+
+/* media queries */
+
+/* ! Media Queries */
+/* ? Handy ab 576px */
+/* ? Tablet ab 768px */
+/* ? Desktop ab 992px */
+
+/* # DESKTOP -> Handy max-width, um das Layout anzupassen, wenn der Bildschirm kleiner wird */
+
+/* * das @media ist ein Schlüssel, dein ein Media Querie in css einbettet. */
+/* * das Wort "only" wird verwendet, um ältere Browser auszuschließen, die die Media Queries nicht korrekt interpritieren können.  */
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    
+    header {
+        height: 447px;
+    }
+    
+    .services, .parallax, .contact {
+        background-attachment: fixed;
+    }
+
+    .picture__section {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: auto;
+    }
+    
+    .picture__section div {
+        background-color: transparent;
+        width: 30%;
+    }
+    
+    .picture__section button {
+        opacity: 0;
+    }
+}
