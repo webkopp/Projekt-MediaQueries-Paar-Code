@@ -1,4 +1,4 @@
-/* Global Styling */
+/* global styling */
 
 @font-face {
     font-family: 'Alegreya-Regular';
@@ -17,8 +17,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-
 
 :root {
     --white-color: white;
@@ -488,13 +486,14 @@ footer p {
 /* * das @media ist ein Schlüssel, dein ein Media Querie in css einbettet. */
 /* * das Wort "only" wird verwendet, um ältere Browser auszuschließen, die die Media Queries nicht korrekt interpritieren können.  */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     html {
-        font-size: 18px;
+        font-size: auto;
     }
     
-    header {
-        height: 447px;
+    body {
+        min-width: 768px;
+        height: auto;
     }
     
     .services, .parallax, .contact {
@@ -519,4 +518,16 @@ footer p {
     .picture__section button {
         opacity: 0;
     }
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: auto;
+    }
+    
+    body {
+        min-width: 992px;
+        height: 100vh;
+    }
+    
 }
