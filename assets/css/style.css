@@ -558,8 +558,7 @@ footer p {
     .testimonials__content {
         display: flex;
         flex-direction: row;
-        align-items: space-between;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         width: 100%; 
         height: auto;
