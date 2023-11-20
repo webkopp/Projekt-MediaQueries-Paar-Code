@@ -527,12 +527,9 @@ footer p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         gap: 1em;
-
     }
-
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -545,23 +542,38 @@ footer p {
         height: 100vh;
     }
 
+    .service__head {
+        display: flex;
+        flex-direction: column;
+    }
+
     .service__section {
         display: flex;
         flex-direction: row;
-        align-items: space-between;
         justify-content: space-between;
-        flex-wrap: wrap;
         width: 100%; 
         height: auto;
+    }
+
+    .service__content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .testimonials__content {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;       
         flex-wrap: wrap;
         width: 100%; 
-        height: auto;
     }
     
 }
